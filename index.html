@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>जन्मदिन मुबारक हो पापा | 25 November</title>
+  <!-- Google Fonts for Hindi and English -->
+  <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Rozha+One&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Standard CSS File -->
+  <link rel="stylesheet" href="style.css">
+  <!-- PyScript for Python browser execution -->
+  <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+  <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+<body>
+
+  <!-- Background Fireworks Canvas -->
+  <canvas id="celebrationCanvas"></canvas>
+
+  <!-- Floating Balloons Container -->
+  <div id="balloon-container"></div>
+
+  <main class="main-wrapper">
+    
+    <!-- STAGE 1: Celebration Sign Banner -->
+    <header class="celebration-sign pulse-glow">
+      <div class="badge">✨ 25 NOVEMBER SPECIAL CELEBRATION ✨</div>
+      <h1 class="hindi-title">जन्मदिन की हार्दिक शुभकामनाएँ पापा!</h1>
+      <p class="subtitle">Happy Birthday to Our Guiding Star, Pride & Strength</p>
+      <div id="countdown-box" class="countdown-timer">Loading 25th Nov Countdown...</div>
+      <button id="celebrate-btn" class="gold-btn">🎉 उत्सव शुरू करें (Launch Grand Fireworks)</button>
+    </header>
+
+    <!-- STAGE 2: Animated Birthday Cake & Hindi Wishes -->
+    <section class="card wish-section">
+      <div class="cake-wrapper">
+        <div class="cake">
+          <div class="plate"></div>
+          <div class="layer layer-bottom"></div>
+          <div class="layer layer-middle"></div>
+          <div class="layer layer-top"></div>
+          <div class="candle">
+            <div class="flame" id="candle-flame"></div>
+          </div>
+        </div>
+        <p class="candle-hint">(मोमबत्ती की लौ पर टैप करके विश मांगें / Tap the flame to make a wish)</p>
+      </div>
+
+      <div class="hindi-message-box">
+        <h2>मेरे प्यारे पापा के नाम</h2>
+        <p id="typewriter-hindi" class="hindi-poem"></p>
+      </div>
+    </section>
+
+    <!-- STAGE 3: Python Output Box -->
+    <section class="card python-card">
+      <div id="python-tribute-output" class="py-output">
+        🐍 Python Blessing Engine Loading...
+      </div>
+    </section>
+
+    <!-- STAGE 4: Photo Gallery & Memorial Tribute -->
+    <section class="card gallery-section">
+      <div class="memorial-sign">
+        <span class="ornament">❖</span>
+        <h2>गौरवपूर्ण पल और अनमोल यादें (Cherished Memories & Pride)</h2>
+        <span class="ornament">❖</span>
+      </div>
+      <p class="gallery-sub">आपकी मेहनत, सफलता और मुस्कुराहट ही हमारी सबसे बड़ी पहचान है</p>
+
+      <!-- Featured Portrait (WA0014) -->
+      <div class="featured-photo-container">
+        <figure class="photo-frame featured-frame">
+          <a href="https://ibb.co/rGHm9bw7" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/pvdxqWL0/IMG-20261104-WA0014.jpg" alt="Papa Glory Trophies">
+          </a>
+          <figcaption>🏆 हमारी ताकत, हमारा गौरव — सदैव मुस्कुराते रहें पापा! 🏆</figcaption>
+        </figure>
+      </div>
+
+      <!-- 6-Photo Memory Grid -->
+      <div class="photo-grid">
+        <figure class="photo-frame">
+          <a href="https://ibb.co/k2zWQ83c" target="_blank" rel="noopener"><img src="https://i.ibb.co/1GBw8qs2/IMG-20261104-WA0016.jpg" alt="Memory 2"></a>
+          <figcaption>हमारी प्रेरणा और आदर्श</figcaption>
+        </figure>
+        <figure class="photo-frame">
+          <a href="https://ibb.co/ZzDLQqNm" target="_blank" rel="noopener"><img src="https://i.ibb.co/9H58xQGt/IMG-20261104-WA0023.jpg" alt="Memory 3"></a>
+          <figcaption>सदा मुस्कुराता व्यक्तित्व</figcaption>
+        </figure>
+        <figure class="photo-frame">
+          <a href="https://ibb.co/8nv9hm0w" target="_blank" rel="noopener"><img src="https://i.ibb.co/LDj1G08y/IMG-20261104-WA0018.jpg" alt="Memory 4"></a>
+          <figcaption>अनमोल और यादगार पल</figcaption>
+        </figure>
+        <figure class="photo-frame">
+          <a href="https://ibb.co/W4BjwDTq" target="_blank" rel="noopener"><img src="https://i.ibb.co/7drL5g98/IMG-20261104-WA0021.jpg" alt="Memory 5"></a>
+          <figcaption>आपका स्नेह और आशीर्वाद</figcaption>
+        </figure>
+        <figure class="photo-frame">
+          <a href="https://ibb.co/7Ng9PcPt" target="_blank" rel="noopener"><img src="https://i.ibb.co/prWmcDcj/IMG-20261104-WA0020.jpg" alt="Memory 6"></a>
+          <figcaption>परिवार की शान</figcaption>
+        </figure>
+        <figure class="photo-frame">
+          <a href="https://ibb.co/Mxs5PndG" target="_blank" rel="noopener"><img src="https://i.ibb.co/B5tKTLkr/IMG-20261104-WA0019.jpg" alt="Memory 7"></a>
+          <figcaption>खुशियों के खूबसूरत लम्हे</figcaption>
+        </figure>
+      </div>
+
+      <div class="final-tribute-banner">
+        <h3>✨ समर्पण और सम्मान (A Timeless Tribute) ✨</h3>
+        <p>
+          पापा, आपके आदर्श, आपका संघर्ष और आपकी हर उपलब्धि हमारे पूरे परिवार का सिर गर्व से ऊँचा करती है। 
+          25 नवंबर का यह पावन दिन आपके गौरवपूर्ण व्यक्तित्व और आपके अनंत स्नेह को समर्पित है।
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Standard JavaScript File -->
+  <script src="script.js"></script>
+  <!-- Python File -->
+  <script type="py" src="birthday_blessing.py"></script>
+</body>
+</html>
