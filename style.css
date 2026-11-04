@@ -32,7 +32,7 @@ body { background: radial-gradient(circle at top, #1e1b4b, #090d16 80%); color: 
 .memorial-sign h2 { color: #fde68a; font-size: clamp(1.3rem, 3.5vw, 1.9rem); }
 .ornament { color: #f59e0b; font-size: 1.5rem; }
 .gallery-sub { text-align: center; color: #94a3b8; margin-bottom: 24px; }
-.featured-photo-container { display: flex; justifyContent: center; margin-bottom: 26px; }
+.featured-photo-container { display: flex; justify-content: center; margin-bottom: 26px; }
 .featured-frame { max-width: 440px; width: 100%; border: 3px solid #fbbf24; }
 .featured-frame img { width: 100%; height: auto; max-height: 540px; object-fit: contain; background: #090d16; display: block; }
 .photo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 28px; }
