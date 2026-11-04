@@ -90,13 +90,12 @@ flame.addEventListener('click', () => {
   }
 });
 
-// Real Hinglish Typewriter Text (Strict word removed)
-const hindiPoemText = `Aap bilkul strict nahi ho, bas tabhi chilate ho jab hum koi badi galti karte hain.
-Baaqi toh aap humara kitna dhyan rakhte ho, yeh hum acche se jaante hain.
+// Clean Typewriter Text
+const hindiPoemText = `Aap humari har baat maante ho, humein har cheez dete ho. 
+Aap bilkul strict nahi ho, bas kabhi-kabhi chillate ho woh bhi tab jab koi bohot badi galti ho jaye, warna kuch nahi kehte.
 
 Happy Birthday Papa! 
-Aapka gussa sirf humari galtiyo par hota hai, 
-par dil mein humare liye pyaar sabse zyada hai.`;
+Aap jaisa accha aur samajhdar Papa aur koi nahi ho sakta.`;
 
 let charIndex = 0;
 const targetEl = document.getElementById('typewriter-hindi');
@@ -111,31 +110,4 @@ function typeHindiWishes() {
 
 window.addEventListener('DOMContentLoaded', () => {
   setTimeout(typeHindiWishes, 600);
-  updateBirthdayCountdown();
-  setInterval(updateBirthdayCountdown, 1000);
 });
-
-function updateBirthdayCountdown() {
-  const now = new Date();
-  let year = now.getFullYear();
-  let bday = new Date(year, 10, 25, 0, 0, 0);
-
-  if (now.getMonth() === 10 && now.getDate() === 25) {
-    document.getElementById('countdown-box').innerHTML =
-      "🎉 Aaj 25 November hai! Happy Birthday Papa! 🎂";
-    return;
-  }
-
-  if (now > bday) {
-    bday = new Date(year + 1, 10, 25, 0, 0, 0);
-  }
-
-  const diff = bday - now;
-  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-  const mins = Math.floor((diff / (1000 * 60)) % 60);
-  const secs = Math.floor((diff / 1000) % 60);
-
-  document.getElementById('countdown-box').innerHTML =
-    `⏳ 25 November mein baaki: ${days} din : ${hours} ghante : ${mins} minute : ${secs} second`;
-}
