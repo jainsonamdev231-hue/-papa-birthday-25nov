@@ -8,7 +8,6 @@ body { background: radial-gradient(circle at top, #1e1b4b, #090d16 80%); color: 
 .badge { display: inline-block; background: linear-gradient(90deg, #d97706, #fbbf24, #d97706); color: #0f172a; font-weight: 700; padding: 6px 18px; border-radius: 999px; font-size: 0.85rem; letter-spacing: 1.5px; margin-bottom: 16px; }
 .hindi-title { font-size: clamp(2rem, 5vw, 3.3rem); color: #fde68a; text-shadow: 0 3px 15px rgba(251, 191, 36, 0.5); margin-bottom: 10px; }
 .subtitle { color: #cbd5e1; font-size: 1.05rem; margin-bottom: 18px; }
-.countdown-timer { display: inline-block; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(251, 191, 36, 0.4); padding: 10px 22px; border-radius: 12px; color: #fbbf24; font-weight: 600; margin-bottom: 20px; }
 .gold-btn { display: block; margin: 0 auto; background: linear-gradient(135deg, #f59e0b, #eab308); color: #0f172a; font-weight: 700; font-size: 1rem; padding: 12px 28px; border: none; border-radius: 50px; cursor: pointer; box-shadow: 0 5px 20px rgba(245, 158, 11, 0.45); }
 .card { background: rgba(15, 23, 42, 0.72); border: 1px solid rgba(251, 191, 36, 0.35); border-radius: 18px; padding: 28px 22px; backdrop-filter: blur(8px); }
 .cake-wrapper { display: flex; flex-direction: column; align-items: center; margin-bottom: 15px; }
@@ -26,8 +25,6 @@ body { background: radial-gradient(circle at top, #1e1b4b, #090d16 80%); color: 
 .hindi-message-box { text-align: center; margin-top: 25px; }
 .hindi-message-box h2 { color: #fbbf24; margin-bottom: 14px; font-size: 1.6rem; }
 .hindi-poem { font-size: 1.15rem; line-height: 1.8; color: #f1f5f9; white-space: pre-line; min-height: 160px; }
-.python-card { text-align: center; background: linear-gradient(135deg, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.9)); border-left: 4px solid #38bdf8; }
-.py-output { font-size: 1.05rem; color: #bae6fd; line-height: 1.6; }
 .memorial-sign { display: flex; align-items: center; justify-content: center; gap: 12px; text-align: center; margin-bottom: 8px; }
 .memorial-sign h2 { color: #fde68a; font-size: clamp(1.3rem, 3.5vw, 1.9rem); }
 .ornament { color: #f59e0b; font-size: 1.5rem; }
