@@ -6,8 +6,9 @@ today = date.today()
 blessing_lines = [
     "🌟 [Python Tribute Module Active] 🌟",
     "Date: 25 November — Papa ke birthday ka special message.",
-    "Strict hone ke liye thank you Papa, sab aapki wajah se hi hai! Cheers!"
+    "Aap strict bilkul nahi ho, bas kabhi-kabhi daantte ho! Happy Birthday Papa!"
 ]
 
 output_div = document.querySelector("#python-tribute-output")
 output_div.innerHTML = "<br>".join(blessing_lines)
+
