@@ -1,4 +1,3 @@
-// Fireworks Canvas Engine
 const canvas = document.getElementById('celebrationCanvas');
 const ctx = canvas.getContext('2d');
 
@@ -18,8 +17,7 @@ function createFirework(x, y) {
     const angle = (Math.PI * 2 * i) / count;
     const speed = Math.random() * 5 + 1.5;
     particles.push({
-      x,
-      y,
+      x, y,
       vx: Math.cos(angle) * speed,
       vy: Math.sin(angle) * speed,
       alpha: 1,
@@ -61,7 +59,6 @@ setInterval(() => {
   createFirework(rx, ry);
 }, 2500);
 
-// Balloons Generator
 function spawnBalloon() {
   const container = document.getElementById('balloon-container');
   const b = document.createElement('div');
@@ -74,7 +71,6 @@ function spawnBalloon() {
 }
 setInterval(spawnBalloon, 1800);
 
-// Interactive Buttons & Flame
 document.getElementById('celebrate-btn').addEventListener('click', () => {
   for (let i = 0; i < 5; i++) {
     setTimeout(() => {
@@ -94,14 +90,14 @@ flame.addEventListener('click', () => {
   }
 });
 
-// Hindi Typewriter Poem & Countdown Timer
-const hindiPoemText = `उँगली पकड़कर चलना सिखाया आपने,
-हर मुश्किल से लड़ना सिखाया आपने।
-आपकी दुआओं से ही रोशन है हमारा जहाँ,
-हमें अपने साए में हमेशा महफ़ूज़ रखा आपने।
+// Normal Hinglish Typewriter Text
+const hindiPoemText = `Maana ki aapne humein bohot daanta hai, strictness rakhi hai,
+Har baat par tokna aur discipline sikhana aapka style raha hai.
+Par aaj samajh aata hai ki woh sab humari hi bhalai ke liye tha.
 
-पापा, आपकी मेहनत और आपकी हर उपलब्धि पर हमें गर्व है।
-25 नवंबर के इस पावन दिन पर आपको जन्मदिन की अनंत शुभकामनाएँ!`;
+Happy Birthday Papa! 
+Aapka gussa aur strict hona upar se tha, 
+par andar hum sabke liye kitna pyaar hai, yeh hum sab jaante hain.`;
 
 let charIndex = 0;
 const targetEl = document.getElementById('typewriter-hindi');
@@ -110,7 +106,7 @@ function typeHindiWishes() {
   if (charIndex < hindiPoemText.length) {
     targetEl.textContent += hindiPoemText.charAt(charIndex);
     charIndex++;
-    setTimeout(typeHindiWishes, 45);
+    setTimeout(typeHindiWishes, 35);
   }
 }
 
@@ -127,7 +123,7 @@ function updateBirthdayCountdown() {
 
   if (now.getMonth() === 10 && now.getDate() === 25) {
     document.getElementById('countdown-box').innerHTML =
-      "🎉 आज 25 नवंबर है! जन्मदिन की ढेर सारी बधाइयाँ पापा! 🎂";
+      "🎉 Aaj 25 November hai! Happy Birthday Papa! 🎂";
     return;
   }
 
@@ -142,5 +138,5 @@ function updateBirthdayCountdown() {
   const secs = Math.floor((diff / 1000) % 60);
 
   document.getElementById('countdown-box').innerHTML =
-    `⏳ 25 नवंबर उत्सव में शेष: ${days} दिन : ${hours} घंटे : ${mins} मिनट : ${secs} सेकंड`;
+    `⏳ 25 November mein baaki: ${days} din : ${hours} ghante : ${mins} minute : ${secs} second`;
 }
