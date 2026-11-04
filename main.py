@@ -2,12 +2,11 @@ from datetime import date
 from pyscript import document
 
 today = date.today()
-bday_date = date(today.year, 11, 25)
 
 blessing_lines = [
     "🌟 [Python Tribute Module Active] 🌟",
-    "दिनांक: 25 नवंबर — पिताजी के जन्मदिवस और गौरवपूर्ण उपलब्धियों का विशेष समर्पण।",
-    "कोटि-कोटि नमन और ढेर सारा प्यार, पापा!"
+    "Date: 25 November — Papa ke birthday ka special message.",
+    "Strict hone ke liye thank you Papa, sab aapki wajah se hi hai! Cheers!"
 ]
 
 output_div = document.querySelector("#python-tribute-output")
