@@ -90,14 +90,13 @@ flame.addEventListener('click', () => {
   }
 });
 
-// Normal Hinglish Typewriter Text
-const hindiPoemText = `Maana ki aapne humein bohot daanta hai, strictness rakhi hai,
-Har baat par tokna aur discipline sikhana aapka style raha hai.
-Par aaj samajh aata hai ki woh sab humari hi bhalai ke liye tha.
+// Real Hinglish Typewriter Text (Strict word removed)
+const hindiPoemText = `Aap bilkul strict nahi ho, bas tabhi chilate ho jab hum koi badi galti karte hain.
+Baaqi toh aap humara kitna dhyan rakhte ho, yeh hum acche se jaante hain.
 
 Happy Birthday Papa! 
-Aapka gussa aur strict hona upar se tha, 
-par andar hum sabke liye kitna pyaar hai, yeh hum sab jaante hain.`;
+Aapka gussa sirf humari galtiyo par hota hai, 
+par dil mein humare liye pyaar sabse zyada hai.`;
 
 let charIndex = 0;
 const targetEl = document.getElementById('typewriter-hindi');
